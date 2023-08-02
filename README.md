@@ -1,6 +1,17 @@
 # Github Issue Viewer
 
 A simple UI and backend to display issues from a github repo.
+![image](./screenshot.png)
+
+## Features
+
+- Frontend written in React with Typescript; Backend is a very simple Flask app
+- Backend calls Github's Search API, authenticating with personal access token if one is defined in the environment
+- Frontend uses a context to fetch data from backend and potentially share with multiple components (currently only used by 1 component)
+- Frontend is built with `Vite`
+- Frontend tests use `vitest` and are are mocked with [MockServiceWorker](https://mswjs.io/)
+- Backend tests use pytest
+- Justfile provides simple commands for installing dependencies, starting servers, and running tests
 
 ## Local Installation
 
